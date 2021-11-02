@@ -20,7 +20,7 @@ namespace Regex.Test
         [InlineData("mississippi", "mis*is*ip*.", true)]
         public void IsMatchShouldReturnTrueOnValidString(string a, string b, bool solution)
         {
-            var result = new Solution().IsMatch(a, b);
+            var result = new Solution2().IsMatch(a, b);
             Assert.Equal(solution, result);
         }
     }
